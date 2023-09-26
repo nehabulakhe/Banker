@@ -1,0 +1,35 @@
+.navbar{
+    height: 68.2px;
+    position: absolute;
+  z-index: 100;
+  width: 100%;
+  border: 1px solid #ffff;
+  position: fixed;
+  margin-top: -9px;
+  background-color: #ffff;
+}
+.navbar .item{
+    display: inline-block;
+    margin-left: 57px;
+    font-family: "Roboto", sans-serif;
+}
+.menu-bar{
+    margin-left:53% ;
+    margin-top: -42px;
+    
+}
+.nav-title{
+    margin-left: 7.2%;
+    color: #fd7e14;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-top: 8px;
+    font-family: "Roboto", sans-serif;
+}
+.item-social{
+  margin-left: 89%;
+  display: inline-flex;
+  margin-bottom: -56px;
+  top: -25px;
+  position: relative;
+}
