@@ -6,13 +6,15 @@ import logo from '../images/background.jpg';
 
 
 function Home() {
+
+    
   return (
     <div className='home'>
       
       
     {/* <img  className='home-image' src={logo} alt="img" /> */}
     
-          <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
         <div className="carousel-inner">
         <img src={logo} className="home-image d-block" alt="..."/>
           <div className="carousel-item active">
@@ -45,15 +47,16 @@ function Home() {
           <span className="carousel-control-next-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Next</span>
         </button>
+        <span class="scroll-btn">
+          <a href="#">
+            <span class="mouse">
+              <span>
+              </span>
+            </span>
+          </a>
+      </span>
       </div>
-
-      <div className="mouse smoothscroll" href="#next"> 
-        <div className="mouse-icon">
-          <div className="mouse-wheel">
-
-          </div>
-        </div>
-      </div>
+     
     </div>
   )
 }
