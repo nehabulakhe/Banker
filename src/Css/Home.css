@@ -1,12 +1,12 @@
 .home-image {
-    height: 50%;
+    height: 925px;
     width: 100%;
     opacity: 0.4;
     z-index: 100px;
 }
 .carousel-caption{
     font-family: "Roboto", sans-serif;
-    margin-bottom: 34%;
+    margin-bottom: 19%;
     font-size: 1.4rem;
   font-weight: 300;
   
@@ -21,3 +21,31 @@
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0, 0.4);
 }
+.mouse {
+    position: absolute;
+    bottom: 72px;
+    z-index: 5;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+}
+.mouse .mouse-icon {
+    display: block;
+    width: 25px;
+    height: 45px;
+    border: 2px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    transition: .3s all ease-in-out;
+}
+.mouse .mouse-wheel {
+    height: 4px;
+    margin: 2px auto 0;
+    display: block;
+    width: 4px;
+    background-color: white;
+    border-radius: 50%;
+    animation: 1.6s ease infinite wheel-up-down;
+  }
