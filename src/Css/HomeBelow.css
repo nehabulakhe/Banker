@@ -1,0 +1,35 @@
+.Home-below{
+    margin-top: 115px;
+}
+.card-title {
+    font-size: 1.4rem;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+  }
+.text{
+    color: grey;
+    margin-top: 19px;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+}
+.circle-bg{
+    width: 84%;
+}
+.btn.btn-primary {
+    background: #fd7e14;
+    border-color: #fd7e14;
+    color: #fff;
+  }
+  .ul-check.success li::before {
+    color: #71bc42;
+  }
+  .form-control{
+    border-radius: 30px;
+    font-family: "Roboto", sans-serif;
+    height: 43px;
+  }
+  .btn.btn.btn-primary{
+border-radius: 30px;
+font-family: "Roboto", sans-serif;
+height: 43px;
+  }
