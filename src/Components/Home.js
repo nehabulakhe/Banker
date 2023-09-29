@@ -47,9 +47,9 @@ function Home() {
           <span className="carousel-control-next-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Next</span>
         </button>
-        <span class="scroll-btn">
+        <span className="scroll-btn">
           <a href="#">
-            <span class="mouse">
+            <span className="mouse">
               <span>
               </span>
             </span>
