@@ -1,0 +1,30 @@
+.container{
+    margin-top: 12%;
+}
+.section-title {
+    color: #fd7e14;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    margin-left: 49%;
+  }
+  .lead{
+    color: grey;
+    margin-left: 48%;
+    width: 54%;
+  }
+  .text{
+    margin-top: 19px;
+    line-height: 1.7;
+  color: gray;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 600px) {
+    .section-title{
+        align-items: center;
+    display: contents;
+    }
+  }
