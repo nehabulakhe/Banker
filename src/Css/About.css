@@ -1,5 +1,5 @@
 .container{
-    margin-top: 12%;
+    margin-top: 10%;
 }
 .section-title {
     color: #fd7e14;
@@ -23,8 +23,8 @@
 }
 
 @media (max-width: 600px) {
-    .section-title{
-        align-items: center;
-    display: contents;
+    .align-center{
+      position: relative;
+      left: -24%;
     }
   }
