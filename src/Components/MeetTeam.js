@@ -14,21 +14,25 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import $ from 'jquery';
+import mouseout from 'jquery';
+import mouseenter from 'jquery';
 
 function MeetTeam() {
 
+     
     $(document).ready(function(){
         
         $(".team-member").mouseenter(function(){
-            $(".img-fluid").addClass("show");
-          $(".team-member.social").css("transform", "translateX(0%)");
+            $(this).addClass("show");
+          $(".team-member.show .social").css("transform", "translateX(0%)");
         });
-        $(".team-member").mouseleave(function(){
-            $(".img-fluid").removeClass("show");
-          $(".team-member.social").css("transform", "translateX(-101%)");
+        $(".team-member").mouseout(function(){ 
+            $(".team-member").removeClass("show");
+          $(".team-member .social").css("transform", "translateX(-101%)");
         });
         
       });
+
     
 
   return (

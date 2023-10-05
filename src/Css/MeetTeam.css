@@ -56,3 +56,7 @@
   .team-member .social:active{
     transform: translateX(0%);
   }
+
+  .MeetTeam{
+    border-bottom: 1px solid #dee2e6;
+  }
