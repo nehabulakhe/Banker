@@ -13,8 +13,24 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import $ from 'jquery';
 
 function MeetTeam() {
+
+    $(document).ready(function(){
+        
+        $(".team-member").mouseenter(function(){
+            $(".img-fluid").addClass("show");
+          $(".team-member.social").css("transform", "translateX(0%)");
+        });
+        $(".team-member").mouseleave(function(){
+            $(".img-fluid").removeClass("show");
+          $(".team-member.social").css("transform", "translateX(-101%)");
+        });
+        
+      });
+    
+
   return (
     <div className='MeetTeam'>
       <div className="container">
@@ -45,6 +61,7 @@ function MeetTeam() {
                     </div>
                 </div>
             </div>
+
             <div className="col-md-6 col-lg-3 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
             <div className="team-member">
                     <figure>

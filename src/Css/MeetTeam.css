@@ -25,7 +25,7 @@
   padding: 10px;
   -webkit-transform: translateX(-101%);
   -ms-transform: translateX(-101%);
-  transform: translateX(-101%);
+   transform: translateX(-101%);
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
