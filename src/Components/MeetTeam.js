@@ -16,10 +16,19 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import $ from 'jquery';
 import mouseout from 'jquery';
 import mouseenter from 'jquery';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function MeetTeam() {
 
-     
+    useEffect(() => {
+        AOS.init({
+          duration: 1000, // Specify animation duration
+          once: true, // Specify if animations should only occur once
+        });
+      }, []);
+
     $(document).ready(function(){
         
         $(".team-member").mouseenter(function(){
@@ -40,15 +49,15 @@ function MeetTeam() {
       <div className="container">
         <div className="row mb-5 justify-content-center">
             <div className="col-md-8 text-center">
-                <h2 className="section-title mb-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="" >Meet Team</h2>
-                <p className="lead aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" >
+                <h2 className="section-title mb-3 aos-init" data-aos="fade-up" data-aos-delay="" >Meet Team</h2>
+                <p className="lead aos-init" data-aos="fade-up" data-aos-delay="100" >
                 A small river named Duden flows by their place and supplies it with the necessary regelialia.
                 </p>
             </div>
         </div>
 
         <div className="row"> 
-            <div className="col-md-6 col-lg-3 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="">
+            <div className="col-md-6 col-lg-3 mb-4 aos-init" data-aos="fade-up" data-aos-delay="100">
                 <div className="team-member">
                     <figure>
                         <ul className="social">
@@ -66,7 +75,7 @@ function MeetTeam() {
                 </div>
             </div>
 
-            <div className="col-md-6 col-lg-3 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <div className="col-md-6 col-lg-3 mb-4 aos-init" data-aos="fade-up" data-aos-delay="100">
             <div className="team-member">
                     <figure>
                         <ul className="social">
@@ -83,7 +92,7 @@ function MeetTeam() {
                     </div>
                 </div>
             </div>
-            <div className="col-md-6 col-lg-3 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+            <div className="col-md-6 col-lg-3 mb-4 aos-init" data-aos="fade-up" data-aos-delay="200">
             <div className="team-member">
                     <figure>
                         <ul className="social">
@@ -100,7 +109,7 @@ function MeetTeam() {
                     </div>
                 </div>
             </div>
-            <div className="col-md-6 col-lg-3 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+            <div className="col-md-6 col-lg-3 mb-4 aos-init" data-aos="fade-up" data-aos-delay="300">
             <div className="team-member">
                     <figure>
                         <ul className="social">
@@ -117,7 +126,7 @@ function MeetTeam() {
                     </div>
                 </div>
             </div>
-            <div className="col-md-6 col-lg-3 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="">
+            <div className="col-md-6 col-lg-3 mb-4 aos-init" data-aos="fade-up" data-aos-delay="">
             <div className="team-member">
                     <figure>
                         <ul className="social">
@@ -134,7 +143,7 @@ function MeetTeam() {
                     </div>
                 </div>
             </div>
-            <div className="col-md-6 col-lg-3 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <div className="col-md-6 col-lg-3 mb-4 aos-init" data-aos="fade-up" data-aos-delay="100">
             <div className="team-member">
                     <figure>
                         <ul className="social">
@@ -151,7 +160,7 @@ function MeetTeam() {
                     </div>
                 </div>
             </div>
-            <div className="col-md-6 col-lg-3 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+            <div className="col-md-6 col-lg-3 mb-4 aos-init" data-aos="fade-up" data-aos-delay="200">
             <div className="team-member">
                     <figure>
                         <ul className="social">
@@ -168,7 +177,7 @@ function MeetTeam() {
                     </div>
                 </div>
             </div>
-            <div className="col-md-6 col-lg-3 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+            <div className="col-md-6 col-lg-3 mb-4 aos-init" data-aos="fade-up" data-aos-delay="300">
             <div className="team-member">
                     <figure>
                         <ul className="social">
