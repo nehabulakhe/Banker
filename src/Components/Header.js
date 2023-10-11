@@ -3,8 +3,25 @@ import '../Css/Header.css';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import $ from 'jquery';
 
 function Header() {
+
+  $(document).scroll(function(){
+        
+   
+      $(".navbar").css({"background": "#fff",
+        "border-bottom": "1px solid transparent",
+        "-webkit-box-shadow": "4px 0 20px -5px rgba(0, 0, 0, 0.1)",
+        'box-shadow': "4px 0 20px -5px rgba(0, 0, 0, 0.1)"
+      });
+    
+      $(".navbar .item").css({"color": "black"});
+      $(".navbar .navbar-brand").css({"color":"#fd7e14"});
+      $(".nav-item .nav-link").css("color","black")
+    
+  });
+
   return (
     <div className='navbar'>
      

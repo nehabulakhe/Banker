@@ -27,12 +27,12 @@ function HomeBelow() {
                 <h3 className="card-title">Money Savings</h3>
                 <p className='text'>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
             </div>
-            <div className="col-md-4 text-center aos-init" data-aos="fade-up" data-aos-delay="">
+            <div className="col-md-4 text-center aos-init" data-aos="fade-up" data-aos-delay="100">
                 <img className="img-fluid w-25 mb-4" src={shop} alt="" />
                 <h3 className="card-title">Online Shoppings</h3>
                 <p className='text'>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
             </div>
-            <div className="col-md-4 text-center aos-init" data-aos="fade-up" data-aos-delay="">
+            <div className="col-md-4 text-center aos-init" data-aos="fade-up" data-aos-delay="200">
                 <img className="img-fluid w-25 mb-4" src={credit} alt="" />
                 <h3 className="card-title">Credit / Debit Cards</h3>
                 <p className='text'>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>

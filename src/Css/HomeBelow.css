@@ -6,27 +6,27 @@
     color: #000;
     font-family: "Roboto", sans-serif;
   }
-.text{
+  .Home-below .text{
     color: grey;
     margin-top: 19px;
     font-family: "Roboto", sans-serif;
     font-size: 17px;
 }
 
-.btn.btn-primary {
+.Home-below .btn.btn-primary {
     background: #fd7e14;
     border-color: #fd7e14;
     color: #fff;
   }
-  .ul-check.success li::before {
+  .Home-below .ul-check.success li::before {
     color: #71bc42;
   }
-  .form-control{
+  .Home-below .form-control{
     border-radius: 30px;
     font-family: "Roboto", sans-serif;
     height: 43px;
   }
-  .btn.btn.btn-primary{
+  .Home-below .btn.btn.btn-primary{
 border-radius: 30px;
 font-family: "Roboto", sans-serif;
 height: 43px;
