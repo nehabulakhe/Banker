@@ -1,19 +1,19 @@
 .container{
     margin-top: 10%;
 }
-.section-title {
+.site-section .section-title {
     color: #fd7e14;
     font-size: 40px;
     font-weight: 700;
     font-family: "Roboto", sans-serif;
     margin-left: 49%;
   }
-  .lead{
+  .site-section .lead{
     color: grey;
     margin-left: 48%;
     width: 54%;
   }
-  .text{
+  .site-section .text{
     margin-top: 19px;
     line-height: 1.7;
   color: gray;
