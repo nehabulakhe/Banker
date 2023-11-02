@@ -55,3 +55,9 @@
  .gallery .img-fluid{
     padding: 22px;
  }
+ @media (max-width:600px) {
+    
+    .img-fluid{
+      width: 100%;
+    }
+ }
