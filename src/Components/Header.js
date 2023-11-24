@@ -7,7 +7,7 @@ import $ from 'jquery';
 
 function Header() {
 
-  $(document).scroll(function(){
+  $(document).on("scroll",function(){
         
    
       $(".navbar").css({"background": "#fff",
@@ -18,7 +18,8 @@ function Header() {
     
       $(".navbar .item").css({"color": "black"});
       $(".navbar .navbar-brand").css({"color":"#fd7e14"});
-      $(".nav-item .nav-link").css("color","black")
+      $(".nav-item .nav-link").css("color","black");
+      $('#navbarSupportedContent').css("backgroundColor","white");
     
   });
 
