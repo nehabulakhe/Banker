@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../Css/MeetTeam.css'
 
 import mt1 from '../images/mt1.jpg';
@@ -42,7 +42,16 @@ function MeetTeam() {
         
       });
 
-    
+      const [user,setUser]= React.useState([]);
+      const f =async()=>{
+        const url= await fetch("https://reqres.in/api/users/");
+        const json=await url.json();
+        setUser(json.data);
+        console.log(json.data);
+      };
+      React.useEffect(()=>{
+        f();
+      },[]);
 
   return (
     <div className='MeetTeam'>
@@ -57,25 +66,36 @@ function MeetTeam() {
         </div>
 
         <div className="row"> 
-            <div className="col-md-6 col-lg-3 mb-4 aos-init" data-aos="fade-up" data-aos-delay="100">
-                <div className="team-member">
-                    <figure>
-                        <ul className="social">
-                            <li><a href="#"><span className="icon-facebook"><FacebookIcon></FacebookIcon></span></a></li>
-                            <li><a href="#"><span className="icon-twitter"><TwitterIcon></TwitterIcon></span></a></li>
-                            <li><a href="#"><span className="icon-linkedin"><LinkedInIcon></LinkedInIcon></span></a></li>
-                            <li><a href="#"><span className="icon-instagram"><InstagramIcon></InstagramIcon></span></a></li>
-                        </ul>
-                        <img src={mt1} alt="" className="img-fluid" />
-                    </figure>
-                    <div className="p-3">
+           
+            {user.length && user.map((users)=>{
+                    return(
+                        <div className="col-md-6 col-lg-3 mb-4 aos-init" data-aos="fade-up" data-aos-delay="100">
+                        <div className="team-member">
+                        <figure>
+                                <ul className="social">
+                                    <li><a href="#"><span className="icon-facebook"><FacebookIcon></FacebookIcon></span></a></li>
+                                    <li><a href="#"><span className="icon-twitter"><TwitterIcon></TwitterIcon></span></a></li>
+                                    <li><a href="#"><span className="icon-linkedin"><LinkedInIcon></LinkedInIcon></span></a></li>
+                                    <li><a href="#"><span className="icon-instagram"><InstagramIcon></InstagramIcon></span></a></li>
+                                </ul>
+                        <div key={users.id}>
+                        <img src={users.avatar} key={users.avatar} alt="" className="img-fluid" />
+                        <p>{user.first_name}</p>
+                        </div>
+                        </figure>
+                        </div>
+                    </div>
+                    );
+                })}
+                        
+                    
+                    {/* <div className="p-3">
                         <h3>Kaiara Spencer</h3>
                         <span className='position'>Finance Manager</span>
-                    </div>
-                </div>
-            </div>
+                    </div> */}
+                
 
-            <div className="col-md-6 col-lg-3 mb-4 aos-init" data-aos="fade-up" data-aos-delay="100">
+            {/* <div className="col-md-6 col-lg-3 mb-4 aos-init" data-aos="fade-up" data-aos-delay="100">
             <div className="team-member">
                     <figure>
                         <ul className="social">
@@ -193,7 +213,7 @@ function MeetTeam() {
                         <span className='position'>Bank Teller</span>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
       </div>
     </div>
